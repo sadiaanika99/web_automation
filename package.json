@@ -1,0 +1,20 @@
+{
+  "name": "automation-exercise-login-selenium",
+  "version": "1.0.0",
+  "description": "Selenium WebDriver (JavaScript) automation for the login scenario on automationexercise.com",
+  "private": true,
+  "scripts": {
+    "test": "mocha tests/ --timeout 60000",
+    "test:headed": "cross-env HEADLESS=false mocha tests/ --timeout 60000"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.24.1",
+    "chromedriver": "^129.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "mocha": "^10.7.3",
+    "chai": "^4.5.0",
+    "cross-env": "^7.0.3"
+  }
+}
